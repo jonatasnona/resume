@@ -6,5 +6,5 @@
 rm=/bin/rm -rf
 
 all:
-	pdflatex cv-ptBR.tex
+	pdflatex tex/cv-ptBR.tex
 
