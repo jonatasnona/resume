@@ -1,0 +1,116 @@
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+% \moderncvtheme[blue]{casual}
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman'
+% (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{amssymb}
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+
+% personal data
+\firstname{Jônatas}
+\familyname{Pedraza}
+\title{Software Developer}
+\address{Conjunto Manauense Q F, 16}{Manaus/AM, Brasil}
+\mobile{(+55) 92 91873374}
+\email{jonatas.nona@gmail.com}
+\photo[64pt]{data/avatar.jpg}
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Experience}
+\cventry{2012--2013}{Developer - Cloud \& Backend}{INdT}{Manaus/AM, Brasil}{}{
+Development of SaveMe application for Nokia S40 Platform.
+Development of a template engine for the application FolderIdea using HubTiles
+in C\#.
+Developer of the Manatus Project (Nokia CTO), work with implementation of REST
+APIs for the main service using NodeJS. Git reviewer and code integration with
+remote teams. Debian and rpm packaging of the services.
+Frontend Group Member - Cloud \& Backend professionals responsible for share
+and instruct other developers about tools and best practices of frontend
+development.
+\newline{}}
+
+\cventry{2012}{Test Analyst - Product Creation}{INdT}{Manaus/AM, Brasil}{}{
+Responsible for performing tests to the PagSeguro NFC Payment application to
+validate the quality and integrity application, generated nightly builds and
+maintain a REST API Dummy server up and running.
+\newline{}}
+
+\cventry{2010--2012}{Trainee}{INPA}{Manaus/AM, Brasil}{}{
+Development of Automatic Ornithologis that is a service built with OpenLayers
+to visualize species of birds in the legal Amazon, the service consumes data
+of geospatial distributed database.
+\newline{}}
+
+\cventry{2008--2010}{Trainee}{FUCAPI}{Manaus/AM, Brasil}{}{
+Application Development for Maemo with C/C++, Python and Qt.
+\newline{}}
+
+\section{Education}
+\cventry{2013}{Student of Computer Science}{FUCAPI}{Manaus/AM,
+Brasil}{}{Status: Ongoing (last year)\newline{}}
+
+\section{Independent Coursework}
+\cventry{2013}{Try jQuery}{}{CodeSchool}{}{Online course lectured by Gregg Pollack.\newline{}}
+\cventry{2012}{Try Git}{}{CodeSchool}{}{Online course offered by \href{codeschool.com}{CodeSchool}.\newline{}}
+\cventry{2012}{jQuery Air: First Flight}{}{CodeSchool}{}{Online course offered by \href{codeschool.com}{CodeSchool}.\newline{}}
+\cventry{2012}{30 Days to Learn jQuery}{}{Nettuts+}{}{Online course lectured by Jeffrey Way.\newline{}}
+
+\section{Languages}
+\cvlanguage{Inglês}{Intermediate}{}
+
+\section{Computer Skills}
+\cvline{SO}{Linux $\bigstar$}
+\cvline{Programming Languages}{C, C++, Java, PHP, Python, JavaScript $\bigstar$, Shell script}
+\cvline{Markup Languages}{XML, LaTeX, CSS3, HTML5, Markdown}
+\cvline{Frameworks}{jQuery $\bigstar$, Qt}
+\cvline{Databases}{MySQL, PostgreSQL}
+\cvline{VCS}{Git $\bigstar$, SVN}
+\cvline{Build Tools}{Automake, Autoconf, ant}
+\cvline{CMS}{Wordpress}
+\cvline{IDE}{Eclipse, VIM $\bigstar$}
+\cvline{Test Automation}{Selenium, PhantomJS, CasperJS}
+\cvline{Bugtracker}{JIRA}
+\cvline{Featured Technologies}{NodeJS}
+
+\section{Publications}
+\cvitem{2010}{Pedraza Jônatas, Campos Laurindo, \textit{``Criação e Mapeamento
+de Ontologias de Domínio de Biodiversidade''}, II Escola Regional de Informática. Manaus/AM, Brasil.}
+\cvitem{2009}{Bilby Henry, Junior Antônio, Oliveira Samuel, Pedraza Jônatas,
+Portela André, \textit{``Desenvolvimento de Sistemas Pervasivos com Bluetooth e
+Linux/Python''}, 10\textordmasculine \ Fórum Internacional Software Livre. Porto Alegre/RS, Brasil.}
+
+%\section{Palestras e Minicursos}
+%\cvitem{2010}{\textit{``Ubuntu: Como instalar e usar''}, FLISOL. Manaus/AM, Brasil.}
+
+\section{Academic Honors}
+\cvlistitem{``Best Poster'' in 2010, by II Escola Regional de Informática.}
+
+%\section{Interests}
+%\cvline{Photography}{\small Amateur photographer}
+%\cvline{Science-Fiction}{\small Reader of science-fiction novels.}
+%\cvline{Music}{\small Fond of alternative and indie music.}
+
+\end{document}
