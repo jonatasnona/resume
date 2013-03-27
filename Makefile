@@ -13,9 +13,26 @@ TEXDIR=tex
 all:
 	mkdir -p $(PDFDIR)
 	cp -rf $(DATADIR) $(BUILDDIR)
-	cp -rf $(TEXDIR) $(BUILDDIR)
+	cp $(TEXDIR)/*.tex $(BUILDDIR)
 	make -C build/ all
-	cp $(BUILDDIR)/cv-ptBR.pdf $(PDFDIR)
+	cp $(BUILDDIR)/*.pdf $(PDFDIR)
+	mv $(PDFDIR)/cv-ptBR.pdf $(PDFDIR)/$(USERNAME)-ptBR.pdf
+	mv $(PDFDIR)/cv-en.pdf $(PDFDIR)/$(USERNAME)-en.pdf
+
+en:
+	mkdir -p $(PDFDIR)
+	cp -rf $(DATADIR) $(BUILDDIR)
+	cp $(TEXDIR)/cv-en.tex $(BUILDDIR)
+	make -C build/ en
+	cp $(BUILDDIR)/*.pdf $(PDFDIR)
+	mv $(PDFDIR)/cv-en.pdf $(PDFDIR)/$(USERNAME)-en.pdf
+
+ptbr:
+	mkdir -p $(PDFDIR)
+	cp -rf $(DATADIR) $(BUILDDIR)
+	cp $(TEXDIR)/*.tex $(BUILDDIR)
+	make -C build/ ptbr
+	cp $(BUILDDIR)/*.pdf $(PDFDIR)
 	mv $(PDFDIR)/cv-ptBR.pdf $(PDFDIR)/$(USERNAME)-ptBR.pdf
 
 clean:

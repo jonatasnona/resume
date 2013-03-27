@@ -6,5 +6,12 @@
 rm=/bin/rm -rf
 
 all:
-	pdflatex tex/cv-ptBR.tex
+	pdflatex cv-ptBR.tex
+	pdflatex cv-en.tex
+
+en:
+	pdflatex cv-en.tex
+
+ptbr:
+	pdflatex cv-ptBR.tex
 
