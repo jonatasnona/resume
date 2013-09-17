@@ -13,11 +13,24 @@
 \moderncvtheme[blue]{classic}
 
 % character encoding
-\usepackage[utf8]{inputenc}
+% set when using with pdflatex
+%\usepackage[utf8]{inputenc}
+
 \usepackage{textcomp}
 \usepackage{amssymb}
+
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
+
+% set when using with lualatex
+% unset when using with pdflatex
+\usepackage{fontawesome}
+\usepackage{moderncviconsawesome}
+
+% ubuntu font
+%\usepackage{ubuntu}
+
+\renewcommand{\familydefault}{\sfdefault}
 
 % personal data
 \firstname{Jônatas}
@@ -26,6 +39,10 @@
 \address{Conjunto Manauense Q F, 16}{Manaus/AM, Brasil}
 \mobile{(+55) 92 91873374}
 \email{jonatas.nona@gmail.com}
+\email{jonatas.nona@gmail.com}
+\social[github]{jonatasnona}
+\social[twitter]{@jonatasnona}
+\social[linkedin][www.linkedin.com/pub/jônatas-pedraza/8/959/91]{Jônatas Pedraza}
 %\photo[64pt]{data/avatar.jpg}
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
