@@ -17,6 +17,7 @@
 
 \usepackage{textcomp}
 \usepackage{amssymb}
+\usepackage{enumitem}
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
@@ -30,6 +31,7 @@
 %\usepackage{ubuntu}
 
 \renewcommand{\familydefault}{\sfdefault}
+\setitemize[0]{leftmargin=10pt,itemindent=10pt}
 
 % personal data
 \firstname{Jonatas}
@@ -113,13 +115,17 @@ do NBGI.
 \newline{}}
 
 \cventry{2008--2010}{Scholarship Intern}{FUCAPI}{Manaus/AM, Brasil}{}{
-Bolsista do projeto Zagaia, projeto realizado a partir de uma parceria com a
-FUCAPI e o INdT com o objetivo de desenvolver software embarcado para dispositivos Nokia.
-Desenvolvedor do PC REMOTE, uma aplicação escrita em Python para o N810 que permitia a interação
-do teclado e mouse a partir de um device N810 com o desktop.
-Desenvolvedor do KFluid, um plasmoid KDE desenvolvido em Qt responsável por realizar
-transferências de arquivos via bluetooth através de drag and drop.
-Empacotador debian oficial dos projetos.
+\textbf{Atividades:}
+    \begin{itemize}
+        \item Desenvolvimento de projetos embarcados para dispositivos Nokia.
+        \item Empacotador oficial.
+    \end{itemize}
+\textbf{Projetos:}
+    \begin{itemize}
+        \item PC Remote - uma aplicação desenvolvida em Python que permitia a interação do teclado e mouse a partir de um device N810 com o desktop.
+        \item KFluid - um plasmoide KDE desenvolvido em Qt responsável por realizar transferências de arquivos via bluetooth através de drag and drop.
+    \end{itemize}
+\hspace{1pt}
 \newline{}}
 
 \section{Cursos}
