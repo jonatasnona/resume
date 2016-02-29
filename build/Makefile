@@ -13,7 +13,7 @@ en:
 	pdflatex cv-en.tex
 
 ptbr:
-	lualatex tex/cv-ptBR.tex
+	lualatex cv-ptBR.tex
 #	pdflatex tex/cv-ptBR.tex
 #	xelatex tex/cv-ptBR.tex
 #	lualatex tex/cv-ptBR.tex
